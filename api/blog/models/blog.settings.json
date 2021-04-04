@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "name": "Blog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "BlogPostTitle": {
+      "type": "string",
+      "required": true
+    },
+    "BlogFeaturedImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "BlogContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "string"
+    }
+  }
+}

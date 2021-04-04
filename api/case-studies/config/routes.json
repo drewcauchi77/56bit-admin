@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/case-studies",
+      "handler": "case-studies.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/case-studies/count",
+      "handler": "case-studies.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/case-studies/:id",
+      "handler": "case-studies.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/case-studies",
+      "handler": "case-studies.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/case-studies/:id",
+      "handler": "case-studies.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/case-studies/:id",
+      "handler": "case-studies.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

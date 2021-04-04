@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "name": "Case Studies",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "CaseStudyTitle": {
+      "type": "string",
+      "required": true
+    },
+    "ClientFeaturedImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "ClientName": {
+      "type": "string"
+    },
+    "CaseStudyExcerpt": {
+      "type": "text",
+      "required": true
+    },
+    "CaseStudyContent": {
+      "type": "richtext",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "unique": false
+    }
+  }
+}

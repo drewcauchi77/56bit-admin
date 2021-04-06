@@ -38,6 +38,15 @@
     "slug": {
       "type": "string",
       "unique": false
+    },
+    "ContentBackgroundImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

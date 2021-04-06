@@ -30,6 +30,10 @@
     },
     "slug": {
       "type": "string"
+    },
+    "BlogPostExcerpt": {
+      "type": "text",
+      "maxLength": 130
     }
   }
 }

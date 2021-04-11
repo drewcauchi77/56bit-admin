@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "name": "Message",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Company": {
+      "type": "string"
+    },
+    "Query": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "FullName": {
+      "type": "string"
+    },
+    "RepliedTo": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

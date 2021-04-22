@@ -47,6 +47,15 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "CaseStudyImages": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
